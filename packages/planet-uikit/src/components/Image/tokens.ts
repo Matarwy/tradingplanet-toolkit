@@ -1,5 +1,5 @@
 /**
- * @see https://github.com/TradingPlanet/TradingPlanet-Home tokens.ts
+ * @see https://github.com/pancakeswap/pancake-frontend/blob/develop/src/config/constants/tokens.ts
  */
 const tokens = {
   cake: {
@@ -9,7 +9,7 @@ const tokens = {
       97: "0xa35062141Fa33BCA92Ce69FeD37D0E8908868AAe",
     },
     decimals: 18,
-    projectLink: "https://tp-home.vercel.app/",
+    projectLink: "https://pancakeswap.finance/",
   },
   txl: {
     symbol: "TXL",
@@ -36,7 +36,7 @@ const tokens = {
       97: "",
     },
     decimals: 18,
-    projectLink: "https://tp-home.vercel.app/",
+    projectLink: "https://pancakebunny.finance/",
   },
   alice: {
     symbol: "ALICE",
@@ -441,7 +441,7 @@ const tokens = {
       97: "0xae13d989dac2f0debff460ac112a837c89baa7cd",
     },
     decimals: 18,
-    projectLink: "https://tp-home.vercel.app/",
+    projectLink: "https://pancakeswap.finance/",
   },
   blink: {
     symbol: "BLINK",
@@ -585,7 +585,7 @@ const tokens = {
       97: "0xfE1e507CeB712BDe086f3579d2c03248b2dB77f9",
     },
     decimals: 18,
-    projectLink: "https://tp-home.vercel.app/",
+    projectLink: "https://pancakeswap.finance/",
   },
   bifi: {
     symbol: "BIFI",

@@ -1,4 +1,5 @@
 import React from "react";
+import { PancakesIcon } from "../Svg";
 import { Link, LinkExternal } from "./index";
 
 export default {
@@ -35,18 +36,14 @@ export const Default: React.FC = () => {
         </Link>
       </div>
       <div>
+        <Link href="/">
+          With icon
+          <PancakesIcon />
+        </Link>
+      </div>
+      <div>
         <LinkExternal href="/">LinkExternal</LinkExternal>
       </div>
     </div>
   );
 };
-
-
-/*
-
-1. Dropdown
-2. Modal
-3. Header
-4. Inputs/Select
-5. Loading
-*/

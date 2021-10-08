@@ -71,8 +71,9 @@ export const StyledOverlay = styled.div`
 `;
 
 export const StyledDropdownMenu = styled.div<{ $isOpen: boolean; $isBottomNav: boolean }>`
-  background-color: ${({ theme }) => theme.colors.subBackground};
-  border-radius: 4px;
+  background-color: ${({ theme }) => theme.card.background};
+  border: 1px solid ${({ theme }) => theme.colors.cardBorder};
+  border-radius: 16px;
   padding-bottom: 4px;
   padding-top: 4px;
   pointer-events: auto;
@@ -80,12 +81,12 @@ export const StyledDropdownMenu = styled.div<{ $isOpen: boolean; $isBottomNav: b
   visibility: visible;
   z-index: 1001;
 
-  /* ${({ $isOpen }) =>
+  ${({ $isOpen }) =>
     !$isOpen &&
     `
     pointer-events: none;
     visibility: hidden;
-  `} */
+  `}
 `;
 
 export const LinkStatus = styled(Text)<{ color: keyof Colors }>`

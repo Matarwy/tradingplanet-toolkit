@@ -13,9 +13,9 @@ type getTextColorProps = {
 };
 
 const getTextColor = ({ eventStatus, useDark }: getTextColorProps): keyof Colors => {
-  if (eventStatus === "upcoming") return "textDisabled" //useDark ?  : (lightColors.textDisabled as keyof Colors);
+  if (eventStatus === "upcoming") return useDark ? "textDisabled" : (lightColors.textDisabled as keyof Colors);
   if (eventStatus === "live") return "success";
-  return "white";// useDark ? "white" : (lightColors.textSubtle as keyof Colors);
+  return useDark ? "textSubtle" : (lightColors.textSubtle as keyof Colors);
 };
 
 const Timeline: React.FC<TimelineProps> = ({ events, useDark = true }) => {
@@ -28,13 +28,13 @@ const Timeline: React.FC<TimelineProps> = ({ events, useDark = true }) => {
         return (
           <TimelineEvent key={text} $useDark={useDark}>
             <Flex mr="10px" alignItems="center">
-              {/* {isUpcoming && (
+              {isUpcoming && (
                 <IconComponent iconName="CircleOutline" color={useDark ? "textDisabled" : lightColors.textDisabled} />
-              )} */}
+              )}
               {isLive && <IconComponent iconName="Logo" />}
-              {/* {isPast && (
-                // <IconComponent iconName="CheckmarkCircleFill" color={useDark ? "textSubtle" : lightColors.textSubtle} />
-              )} */}
+              {isPast && (
+                <IconComponent iconName="CheckmarkCircleFill" color={useDark ? "textSubtle" : lightColors.textSubtle} />
+              )}
             </Flex>
             <Text color={getTextColor({ eventStatus: status, useDark })} bold>
               {text}
@@ -44,9 +44,9 @@ const Timeline: React.FC<TimelineProps> = ({ events, useDark = true }) => {
                 {altText}
               </Text>
             )}
-            {/* {infoText && (
+            {infoText && (
               <InfoTooltip text={infoText} ml="10px" iconColor={useDark ? "textSubtle" : lightColors.textSubtle} />
-            )} */}
+            )}
           </TimelineEvent>
         );
       })}

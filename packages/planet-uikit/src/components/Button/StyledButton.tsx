@@ -15,7 +15,7 @@ const getDisabledStyles = ({ $isLoading, theme }: TransientButtonProps) => {
   if ($isLoading === true) {
     return `
       &:disabled,
-      &.planet-button--disabled {
+      &.pancake-button--disabled {
         cursor: not-allowed;
       }
     `;
@@ -23,7 +23,7 @@ const getDisabledStyles = ({ $isLoading, theme }: TransientButtonProps) => {
 
   return `
     &:disabled,
-    &.planet-button--disabled {
+    &.pancake-button--disabled {
       background-color: ${theme.colors.backgroundDisabled};
       border-color: ${theme.colors.backgroundDisabled};
       box-shadow: none;
@@ -46,10 +46,11 @@ const getOpacity = ({ $isLoading = false }: TransientButtonProps) => {
 const StyledButton = styled.button<BaseButtonProps>`
   align-items: center;
   border: 0;
-  border-radius: 3px;
+  border-radius: 16px;
+  box-shadow: 0px -1px 0px 0px rgba(14, 14, 44, 0.4) inset;
   cursor: pointer;
   display: inline-flex;
-  font-family: 'Inter', sans-serif;
+  font-family: inherit;
   font-size: 16px;
   font-weight: 600;
   justify-content: center;
@@ -58,15 +59,14 @@ const StyledButton = styled.button<BaseButtonProps>`
   opacity: ${getOpacity};
   outline: 0;
   transition: background-color 0.2s, opacity 0.2s;
-  padding: 0px 40px;
-  text-decoration: none;
-  &:hover:not(:disabled):not(.planet-button--disabled):not(.planet-button--disabled):not(:active) {
-    /* opacity: 0.65; */
+
+  &:hover:not(:disabled):not(.pancake-button--disabled):not(.pancake-button--disabled):not(:active) {
+    opacity: 0.65;
   }
 
-  &:active:not(:disabled):not(.planet-button--disabled):not(.planet-button--disabled) {
-    /* opacity: 0.85; */
-    /* transform: translateY(1px); */
+  &:active:not(:disabled):not(.pancake-button--disabled):not(.pancake-button--disabled) {
+    opacity: 0.85;
+    transform: translateY(1px);
     box-shadow: none;
   }
 

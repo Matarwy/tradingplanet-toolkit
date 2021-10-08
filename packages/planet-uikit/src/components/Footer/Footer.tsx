@@ -1,5 +1,5 @@
 import React from "react";
-import { baseColors, darkColors } from "../../theme/colors";
+import { baseColors, darkColors, lightColors } from "../../theme/colors";
 import { Flex, Box } from "../Box";
 import { Link } from "../Link";
 import {
@@ -13,7 +13,7 @@ import {
 import { FooterProps } from "./types";
 import { ThemeSwitcher } from "../ThemeSwitcher";
 import LangSelector from "../LangSelector/LangSelector";
-// import CakePrice from "../PlanetPrice/PlanetPrice";
+import CakePrice from "../CakePrice/CakePrice";
 import { LogoWithTextIcon, ArrowForwardIcon } from "../Svg";
 import { Button } from "../Button";
 import { Colors } from "../..";
@@ -82,14 +82,14 @@ const MenuItem: React.FC<FooterProps> = ({
           </Flex>
           <Flex order={[1, null, 2]} mb={["24px", null, "0"]} justifyContent="space-between" alignItems="center">
             <Box mr="20px">
-              {/* <CakePrice cakePriceUsd={cakePriceUsd} color={darkColors.textSubtle as keyof Colors} /> */}
+              <CakePrice cakePriceUsd={cakePriceUsd} color={darkColors.textSubtle as keyof Colors} />
             </Box>
             <Button
               as="a"
-              href="https://tp-home.vercel.app?outputCurrency=0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82"
+              href="https://pancakeswap.finance/swap?outputCurrency=0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82"
               target="_blank"
               scale="sm"
-              endIcon={<ArrowForwardIcon color={darkColors.backgroundAlt} />}
+              endIcon={<ArrowForwardIcon color={lightColors.backgroundAlt} />}
             >
               {buyCakeLabel}
             </Button>

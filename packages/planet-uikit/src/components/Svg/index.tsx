@@ -71,7 +71,9 @@ export { default as NftIcon } from "./Icons/Nft";
 export { default as NftFilledIcon } from "./Icons/NftFilled";
 export { default as NoProfileAvatarIcon } from "./Icons/NoProfileAvatar";
 export { default as OpenNewIcon } from "./Icons/OpenNew";
+export { default as PancakesIcon } from "./Icons/Pancakes";
 export { default as PencilIcon } from "./Icons/Pencil";
+export { default as PancakeRoundIcon } from "./Icons/PancakeRound";
 export { default as PocketWatchIcon } from "./Icons/PocketWatch";
 export { default as PlayCircleOutlineIcon } from "./Icons/PlayCircleOutline";
 export { default as PredictionsIcon } from "./Icons/Predictions";
@@ -138,7 +140,6 @@ export { default as TicketIcon } from "./Icons/Ticket";
 export { default as EarnFillIcon } from "./Icons/EarnFill";
 export { default as TrophyIcon } from "./Icons/Trophy";
 export { default as TrophyFillIcon } from "./Icons/TrophyFill";
-export { default as PlanetRoundIcon } from "./Icons/PlanetRound";
 
 export { default as Svg } from "./Svg";
 export type { SvgProps } from "./types";
