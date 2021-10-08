@@ -38,7 +38,7 @@ export type PolymorphicComponent<P, D extends ElementType = "button"> = <E exten
 ) => ReactElement | null;
 
 export interface BaseButtonProps extends LayoutProps, SpaceProps {
-  as?: "a" | "button" | typeof Link;
+  as?: any; //"a" | "button" | typeof Link;
   external?: boolean;
   isLoading?: boolean;
   scale?: Scale;

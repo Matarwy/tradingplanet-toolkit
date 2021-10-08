@@ -1,8 +1,8 @@
 {
   "name": "@tradingplanet/uikit",
-  "version": "0.1.0",
-  "private": true,
+  "version": "0.1.1",
   "main": "dist/index.cjs.js",
+  "description": "Set of UI components for tradingplanet projects",
   "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",
   "files": [
@@ -11,7 +11,7 @@
   "repository": "https://github.com/TradingPlanet/tradingplanet-toolkit/tree/main/packages/planet-uikit",
   "scripts": {
     "start": "yarn storybook",
-    "build": "rm -rf ./dist && rollup -c && tsc -d --emitDeclarationOnly --declarationDir dist",
+    "build": "rm -rf ./dist && rollup -c",
     "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}'",
     "format:check": "prettier --check --loglevel error 'src/**/*.{js,jsx,ts,tsx}'",
     "format:write": "prettier --write 'src/**/*.{js,jsx,ts,tsx}'",
@@ -19,6 +19,11 @@
     "storybook:build": "build-storybook",
     "test": "jest",
     "prepublishOnly": "yarn build"
+  },
+  "jest": {
+    "setupFilesAfterEnv": [
+      "<rootDir>/src/setupTests.js"
+    ]
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^5.11.6",
