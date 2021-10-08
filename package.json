@@ -2,6 +2,10 @@
   "name": "tradingplanet-toolkit",
   "description": "A collection of libraries for tradingPlanet Project",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TradingPlanet/tradingplanet-toolkit"
+  },
   "workspaces": [
     "packages/*"
   ],
