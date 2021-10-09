@@ -13,7 +13,8 @@
     "test:coverage": "jest --collectCoverage",
     "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}'",
     "format:check": "prettier --check --loglevel error 'src/**/*.{js,jsx,ts,tsx}'",
-    "format:write": "prettier --write 'src/**/*.{js,jsx,ts,tsx}'"
+    "format:write": "prettier --write 'src/**/*.{js,jsx,ts,tsx}'",
+    "prepublishOnly": "yarn build"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.13.15",

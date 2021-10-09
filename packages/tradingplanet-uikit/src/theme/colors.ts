@@ -1,13 +1,13 @@
 import { Colors } from "./types";
 
 export const baseColors = {
-  failure: "#ED4B9E",
-  primary: "#1FC7D4",
-  primaryBright: "#53DEE9",
-  primaryDark: "#0098A1",
-  secondary: "#7645D9",
-  success: "#31D0AA",
-  warning: "#FFB237",
+  primary: "#5144fc",
+  primaryBright: "#4779ff",
+  primaryDark: "#1c4dd1",
+  secondary: "#f2ae33",
+  warning: "#e29d24",
+  success: "#25c050",
+  failure: "#c92b42",
 };
 
 export const additionalColors = {
