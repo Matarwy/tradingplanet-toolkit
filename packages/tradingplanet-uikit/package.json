@@ -1,6 +1,6 @@
 {
   "name": "@trading-planet/uikit",
-  "version": "0.55.2",
+  "version": "0.55.3",
   "description": "Set of UI components for tradingplanet projects",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
