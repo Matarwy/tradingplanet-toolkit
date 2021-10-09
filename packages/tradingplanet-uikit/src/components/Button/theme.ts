@@ -18,15 +18,17 @@ export const scaleVariants = {
 
 export const styleVariants = {
   [variants.PRIMARY]: {
-    backgroundColor: "primary",
-    color: "white",
+    background: (theme: any) => theme.colors.gradients.blue,
+    transition: 'color 0.3s',
+    color: "#fff",
+    '&:hover:not(:disabled)': {
+      color: "#000",
+    }
   },
   [variants.SECONDARY]: {
-    backgroundColor: "transparent",
-    border: "2px solid",
-    borderColor: "primary",
+    backgroundColor: (theme: any) => theme.colors.primary,
     boxShadow: "none",
-    color: "primary",
+    color: "#fff",
     ":disabled": {
       backgroundColor: "transparent",
     },
