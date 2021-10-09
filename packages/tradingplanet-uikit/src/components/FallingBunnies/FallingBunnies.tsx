@@ -1,6 +1,6 @@
 import React from "react";
 import styled, { keyframes } from "styled-components";
-import BunnyIcon from "../Svg/Icons/Logo";
+import { TradingPlanetRoundIcon } from "../Svg";
 import { BunnyProps, FallingBunniesProps } from "./types";
 
 const bunnyFall = keyframes`
@@ -73,7 +73,7 @@ const FallingBunnies: React.FC<FallingBunniesProps> = ({
 }) => {
   const bunnies = [...Array(count)].map((_, index) => (
     <Bunny key={String(index)} position={Math.random() * 100} iterations={iterations} duration={duration}>
-      <BunnyIcon width={size} height={size} />
+      <TradingPlanetRoundIcon width={size} height={size} />
     </Bunny>
   ));
 
