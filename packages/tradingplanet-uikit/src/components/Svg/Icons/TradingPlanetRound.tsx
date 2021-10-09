@@ -1,11 +1,9 @@
-import React from 'react'
+import React from "react";
 import Svg from "../Svg";
 import { SvgProps } from "../types";
 
-// svg style={{'enable-background': 'new 0 0 96 9'}}
-const TradingPlanetRound: React.FC<SvgProps> = (...props) => {
-    return (
-    <Svg viewBox="0 0 96 96" {...props}>
+const Icon: React.FC<SvgProps> = (props) => (
+  <Svg viewBox="0 0 96 96"  {...props}>
     <filter  height="140%" id="AI_BevelShadow_1" width="140%" x="-20%" y="-20%">
         <feGaussianBlur  in="SourceAlpha" result="blur" stdDeviation="4"></feGaussianBlur>
         <feOffset  dx="4" dy="4" in="blur" result="offsetBlur"></feOffset>
@@ -19479,8 +19477,7 @@ const TradingPlanetRound: React.FC<SvgProps> = (...props) => {
     AAACAAAAABAAAAAAIAAAAAAAAQAAAAAIAAAAAEAAAAAAAAIAAAAAWCTAAI7o0au8nMekAAAAAElF
     TkSuQmCC" transform="matrix(0.1279 0 0 0.1279 -16.8657 -20.8269)">
     </image>
-    </Svg>
-    )
-};
+  </Svg>
+);
 
-export default TradingPlanetRound;
+export default Icon;
