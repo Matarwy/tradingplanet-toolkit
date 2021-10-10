@@ -29,7 +29,7 @@ const CakePrice: React.FC<Props> = ({ cakePriceUsd, color = "textSubtle" }) => {
       href="/swap?outputCurrency=0x96e738bc52fBcc305E8c4401d05C532Dd4D2F314"
     >
       <TradingPlanetRoundIcon width="24px" mr="8px" />
-      {/* <Text color={color} bold>{`$${cakePriceUsd.toFixed(3)}`}</Text> */}
+      <Text color={color} bold>{`$${cakePriceUsd.toFixed(3)}`}</Text>
     </PriceLink>
   ) : (
     <Skeleton width={80} height={24} />

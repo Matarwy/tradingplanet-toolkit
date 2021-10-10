@@ -76,7 +76,7 @@ export const links: MenuItemsType[] = [
   {
     label: "",
     href: "/",
-    icon: "More",
+    icon: "Apps",
     items: [
       {
         label: "Info & Analytics",
