@@ -7,18 +7,18 @@ export const footerLinks: FooterLinkType[] = [
     items: [
       {
         label: "Contact",
-        href: "https://docs.pancakeswap.finance/contact-us",
+        href: "https://tradingplanet.org/contact-us",
       },
       {
         label: "Blog",
-        href: "https://pancakeswap.medium.com/",
+        href: "https://tradingplanet.org/",
       },
       {
-        label: "Community",
-        href: "https://docs.pancakeswap.finance/contact-us/telegram",
+        label: "Home",
+        href: "https://tradingplanet.io/",
       },
       {
-        label: "CAKE",
+        label: "PLANET",
         href: "https://docs.pancakeswap.finance/tokenomics/cake",
       },
       {
@@ -26,7 +26,7 @@ export const footerLinks: FooterLinkType[] = [
       },
       {
         label: "Online Store",
-        href: "https://pancakeswap.creator-spring.com/",
+        href: "https://store.tradingplanet.io/",
         isHighlighted: true,
       },
     ],
@@ -35,8 +35,8 @@ export const footerLinks: FooterLinkType[] = [
     label: "Help",
     items: [
       {
-        label: "Customer",
-        href: "Support https://docs.pancakeswap.finance/contact-us/customer-support",
+        label: "Customer Support",
+        href: "https://tradingplanet.org/contact-us",
       },
       {
         label: "Troubleshooting",
@@ -51,10 +51,7 @@ export const footerLinks: FooterLinkType[] = [
   {
     label: "Developers",
     items: [
-      {
-        label: "Github",
-        href: "https://github.com/pancakeswap",
-      },
+
       {
         label: "Documentation",
         href: "https://docs.pancakeswap.finance",
@@ -79,7 +76,7 @@ export const socials = [
   {
     label: "Twitter",
     icon: "Twitter",
-    href: "https://twitter.com/pancakeswap",
+    href: "https://twitter.com/tradingplanetx",
   },
   {
     label: "Telegram",
@@ -87,72 +84,18 @@ export const socials = [
     items: [
       {
         label: "English",
-        href: "https://t.me/pancakeswap",
-      },
-      {
-        label: "Bahasa Indonesia",
-        href: "https://t.me/PancakeSwapIndonesia",
-      },
-      {
-        label: "中文",
-        href: "https://t.me/PancakeSwap_CN",
-      },
-      {
-        label: "Tiếng Việt",
-        href: "https://t.me/PancakeSwapVN",
-      },
-      {
-        label: "Italiano",
-        href: "https://t.me/pancakeswap_ita",
-      },
-      {
-        label: "русский",
-        href: "https://t.me/pancakeswap_ru",
-      },
-      {
-        label: "Türkiye",
-        href: "https://t.me/pancakeswapturkiye",
-      },
-      {
-        label: "Português",
-        href: "https://t.me/PancakeSwapPortuguese",
-      },
-      {
-        label: "Español",
-        href: "https://t.me/PancakeswapEs",
-      },
-      {
-        label: "日本語",
-        href: "https://t.me/pancakeswapjp",
-      },
-      {
-        label: "Français",
-        href: "https://t.me/pancakeswapfr",
+        href: "https://t.me/TradingPlanetExchange",
       },
       {
         label: "Announcements",
-        href: "https://t.me/PancakeSwapAnn",
-      },
-      {
-        label: "Whale Alert",
-        href: "https://t.me/PancakeSwapWhales",
+        href: "https://t.me/TradingPlanetEX",
       },
     ],
   },
   {
     label: "Reddit",
     icon: "Reddit",
-    href: "https://reddit.com/r/pancakeswap",
-  },
-  {
-    label: "Instagram",
-    icon: "Instagram",
-    href: "https://instagram.com/pancakeswap_official",
-  },
-  {
-    label: "Github",
-    icon: "Github",
-    href: "https://github.com/pancakeswap/",
+    href: "https://www.reddit.com/user/TradingPlanet",
   },
 ];
 
