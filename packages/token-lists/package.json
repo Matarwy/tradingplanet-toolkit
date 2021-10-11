@@ -8,7 +8,7 @@
   "scripts": {
     "build": "rm -rf ./dist && rollup -c",
     "checksum:pcs-default": "yarn build && node ./dist checksum tradingplanet-default",
-    "generate:pcs-default": "yarn test && yarn build && node ./dist generate tradingplanet-default",
+    "generate:pcs-default": "yarn build && node ./dist generate tradingplanet-default",
     "makelist:pcs-default": "yarn checksum:pcs-default && yarn generate:pcs-default",
     "checksum:pcs-extended": "yarn build && node ./dist checksum tradingplanet-extended",
     "generate:pcs-extended": "yarn test && yarn build && node ./dist generate tradingplanet-extended",
