@@ -28,7 +28,7 @@ const lists = {
     name: "tradingplanet Default",
     keywords: ["tradingplanet", "default"],
     logoURI:
-      "https://tokens.tradingplanet.finance/images/0x96e738bc52fBcc305E8c4401d05C532Dd4D2F314.png",
+      "https://tokens.tradingplanet.finance/images/0x83477a06f73fff92e8cf2c6b2da8efc03294e40c.png",
     sort: false,
     currentVersion: tradingplanetDefaultVersion,
   },
@@ -37,7 +37,7 @@ const lists = {
     name: "tradingplanet Extended",
     keywords: ["tradingplanet", "extended"],
     logoURI:
-      "https://tokens.tradingplanet.finance/images/0x96e738bc52fBcc305E8c4401d05C532Dd4D2F314.png",
+      "https://tokens.tradingplanet.finance/images/0x83477a06f73fff92e8cf2c6b2da8efc03294e40c.png",
     sort: true,
     currentVersion: tradingplanetExtendedVersion,
   },
@@ -46,7 +46,7 @@ const lists = {
     name: "tradingplanet Top 100",
     keywords: ["tradingplanet", "top 100"],
     logoURI:
-      "https://tokens.tradingplanet.finance/images/0x96e738bc52fBcc305E8c4401d05C532Dd4D2F314.png",
+      "https://tokens.tradingplanet.finance/images/0x83477a06f73fff92e8cf2c6b2da8efc03294e40c.png",
     sort: true,
     currentVersion: tradingplanetTop100Version,
   },
@@ -55,7 +55,7 @@ const lists = {
     name: "tradingplanet Top 15",
     keywords: ["tradingplanet", "top 15"],
     logoURI:
-      "https://tokens.tradingplanet.finance/images/0x96e738bc52fBcc305E8c4401d05C532Dd4D2F314.png",
+      "https://tokens.tradingplanet.finance/images/0x83477a06f73fff92e8cf2c6b2da8efc03294e40c.png",
     sort: true,
     currentVersion: tradingplanetTop15Version,
   },
@@ -87,9 +87,9 @@ export const buildList = (listName: string, versionBump?: VersionBump): TokenLis
     tokens: sort
       ? list.sort((t1, t2) => {
           if (t1.chainId === t2.chainId) {
-            // PLANET first in extended list
-            if ((t1.symbol === "PLANET") !== (t2.symbol === "PLANET")) {
-              return t1.symbol === "PLANET" ? -1 : 1;
+            // TP first in extended list
+            if ((t1.symbol === "TP") !== (t2.symbol === "TP")) {
+              return t1.symbol === "TP" ? -1 : 1;
             }
             return t1.symbol.toLowerCase() < t2.symbol.toLowerCase() ? -1 : 1;
           }

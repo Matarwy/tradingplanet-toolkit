@@ -14,11 +14,11 @@
   "tokens": [
     {
       "name": "TradingPlanet Token",
-      "symbol": "PLANET",
-      "address": "0x96e738bc52fBcc305E8c4401d05C532Dd4D2F314",
+      "symbol": "TP",
+      "address": "0x83477a06f73fff92e8cf2c6b2da8efc03294e40c",
       "chainId": 56,
       "decimals": 18,
-      "logoURI": "/images/0x96e738bc52fBcc305E8c4401d05C532Dd4D2F314.png"
+      "logoURI": "/images/0x83477a06f73fff92e8cf2c6b2da8efc03294e40c.png"
     },
     {
       "name": "Cardano Token",

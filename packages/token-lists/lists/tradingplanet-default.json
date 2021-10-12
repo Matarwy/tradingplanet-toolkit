@@ -6,7 +6,7 @@
     "minor": 15,
     "patch": 4
   },
-  "logoURI": "https://tokens.tradingplanet.finance/images/0x96e738bc52fBcc305E8c4401d05C532Dd4D2F314.png",
+  "logoURI": "https://tokens.tradingplanet.finance/images/0x83477a06f73fff92e8cf2c6b2da8efc03294e40c.png",
   "keywords": [
     "tradingplanet",
     "default"
@@ -21,12 +21,12 @@
       "logoURI": "https://tokens.tradingplanet.finance/images/0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c.png"
     },
     {
-      "name": "TradingPlanet Token",
-      "symbol": "PLANET",
-      "address": "0x96e738bc52fBcc305E8c4401d05C532Dd4D2F314",
+      "name": "Trading Planet Token",
+      "symbol": "TP",
+      "address": "0x83477a06f73fff92e8cf2c6b2da8efc03294e40c",
       "chainId": 56,
       "decimals": 18,
-      "logoURI": "https://tokens.tradingplanet.finance/images/0x96e738bc52fBcc305E8c4401d05C532Dd4D2F314.png"
+      "logoURI": "https://tokens.tradingplanet.finance/images/0x83477a06f73fff92e8cf2c6b2da8efc03294e40c.png"
     },
     {
       "name": "Binance Pegged BUSD",
