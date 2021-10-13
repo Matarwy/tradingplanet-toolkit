@@ -22,7 +22,7 @@ export const links: MenuItemsType[] = [
   {
     label: "Trade",
     href: "/swap",
-    icon: "Swap",
+    icon: "Exchange",
     items: [
       {
         label: "Exchange",
@@ -37,7 +37,7 @@ export const links: MenuItemsType[] = [
   {
     label: "Earn",
     href: "/",
-    icon: "Earn",
+    icon: "Money",
     items: [
       {
         label: "Earn",
@@ -56,7 +56,7 @@ export const links: MenuItemsType[] = [
   {
     label: "Win",
     href: "/",
-    icon: "Trophy",
+    icon: "Award",
     items: [
       {
         label: "Win",

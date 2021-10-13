@@ -126,7 +126,8 @@ const Menu: React.FC<NavProps> = ({
               hideLanguage
             />
           </Box>
-          {globalMenu} {userMenu}
+          {globalMenu}
+          {userMenu}
         </Flex>
       </StyledNav>
       {subLinks && <SubMenuItems items={subLinks} mt={`${MENU_HEIGHT + 1}px`} activeItem={activeSubItem} />}

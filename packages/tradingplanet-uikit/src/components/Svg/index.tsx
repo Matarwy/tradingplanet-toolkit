@@ -142,7 +142,11 @@ export { default as TrophyIcon } from "./Icons/Trophy";
 export { default as TrophyFillIcon } from "./Icons/TrophyFill";
 export { default as TradingPlanetRoundIcon } from "./Icons/TradingPlanetRound";
 export { default as AppsIcon } from "./Icons/Apps";
-
+export { default as TranslateIcon } from "./Icons/Translate";
+export { default as AuctionIcon } from "./Icons/Auction";
+export { default as AwardIcon } from "./Icons/Award";
+export { default as MoneyIcon } from "./Icons/Money";
+export { default as ExchangeIcon } from "./Icons/Exchange";
 
 export { default as Svg } from "./Svg";
 export type { SvgProps } from "./types";
