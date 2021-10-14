@@ -34,8 +34,6 @@ export const StyledIconMobileContainer = styled(Box)`
 
 export const StyledToolsContainer = styled(Flex)`
   border-color: ${darkColors.cardBorder};
-  border-top-width: 1px;
-  border-bottom-width: 1px;
   border-style: solid;
   padding: 24px 0;
   margin-bottom: 24px;

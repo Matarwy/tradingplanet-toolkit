@@ -67,7 +67,7 @@ const MenuItem: React.FC<FooterProps> = ({
           ))}
         </Flex>
         <StyledToolsContainer
-          order={[1, null, 3]}
+          order={[3, null, 3]}
           flexDirection={"column"}
           justifyContent="space-between"
         >
@@ -97,9 +97,9 @@ const MenuItem: React.FC<FooterProps> = ({
             </Button>
           </Flex>
           </Flex>
-          <Flex justifyContent="space-between" pt={3} style={{borderTop: `1px solid ${isDark? '#ffffff60': '#00000060'}`}}>
-                <StyledSocialLinks order={[2]} pb={["42px", null, "32px"]} />
-                <Text color={isDark? darkColors.text: lightColors.text}>Copyright © 2021 TradingPlanet | All rights reserved.</Text>
+          <Flex justifyContent="space-between" pt={3} style={{borderTop: `1px solid ${isDark? '#ffffff60': '#00000060'}`}} flexDirection={["column", null, "row"]}>
+              <StyledSocialLinks order={[2]} pb={["42px", null, "32px"]}  pt={["20px", null, null]} />
+              <Text color={isDark? darkColors.text: lightColors.text}>Copyright © 2021 TradingPlanet | All rights reserved.</Text>
           </Flex>
         </StyledToolsContainer>
       </Flex>
