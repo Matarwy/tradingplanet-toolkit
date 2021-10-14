@@ -33,7 +33,7 @@ export const SubMenuItem = styled.button`
   text-align: left;
 
   &:hover {
-    background-color: ${({ theme }) => theme.colors.inputSecondary};
+    /* background-color: ${({ theme }) => theme.colors.inputSecondary}; */
     text-decoration: none;
   }
 `;

@@ -1,10 +1,10 @@
 import styled from "styled-components";
-import { darkColors } from "../../theme/colors";
 import { Box, Flex } from "../Box";
 import SocialLinks from "./Components/SocialLinks";
+import { baseColors, darkColors, lightColors } from "../../theme/colors";
 
-export const StyledFooter = styled(Flex)`
-  background: ${darkColors.backgroundAlt};
+export const StyledFooter: any = styled(Flex)`
+  background-color: ${({ isDark }) => isDark? darkColors.background : lightColors.background};
 `;
 
 export const StyledList = styled.ul`
@@ -22,7 +22,7 @@ export const StyledListItem = styled.li`
   text-transform: capitalize;
 
   &:first-child {
-    color: ${darkColors.secondary};
+    color: ${({ theme }) => theme.colors.secondary};
     font-weight: 600;
     text-transform: uppercase;
   }
