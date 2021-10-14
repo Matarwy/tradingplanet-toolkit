@@ -17,6 +17,8 @@ import CakePrice from "../CakePrice/CakePrice";
 import { LogoWithTextIcon, ArrowForwardIcon } from "../Svg";
 import { Button } from "../Button";
 import { Colors } from "../..";
+import { Text } from '../Text';
+
 
 const MenuItem: React.FC<FooterProps> = ({
   items,
@@ -32,16 +34,19 @@ const MenuItem: React.FC<FooterProps> = ({
   return (
     <StyledFooter isDark={isDark} p={["40px 16px", null, "56px 40px 32px 40px"]} {...props} justifyContent="center">
       <Flex flexDirection="column" width={["100%", null, "1200px;"]}>
-        <StyledIconMobileContainer display={["block", null, "none"]}>
+        {/* <StyledIconMobileContainer display={["block", null, "none"]}>
           <LogoWithTextIcon isDark width="130px" />
-        </StyledIconMobileContainer>
+        </StyledIconMobileContainer> */}
         <Flex
           order={[2, null, 1]}
           flexDirection={["column", null, "row"]}
           justifyContent="space-between"
           alignItems="flex-start"
           mb={["42px", null, "36px"]}
-        >
+          >
+          <Box display={["none", null, "block"]}>
+            <LogoWithTextIcon isDark width="160px" />
+          </Box>
           {items?.map((item) => (
             <StyledList key={item.label}>
               <StyledListItem>{item.label}</StyledListItem>
@@ -60,17 +65,14 @@ const MenuItem: React.FC<FooterProps> = ({
               ))}
             </StyledList>
           ))}
-          <Box display={["none", null, "block"]}>
-            <LogoWithTextIcon isDark width="160px" />
-          </Box>
         </Flex>
-        <StyledSocialLinks order={[2]} pb={["42px", null, "32px"]} mb={["0", null, "32px"]} />
         <StyledToolsContainer
           order={[1, null, 3]}
-          flexDirection={["column", null, "row"]}
+          flexDirection={"column"}
           justifyContent="space-between"
         >
-          <Flex order={[2, null, 1]} alignItems="center">
+          <Flex flexDirection={["column", null, "row"]} justifyContent="space-between" pb={2} style={{borderTop: `1px solid ${isDark? '#ffffff80': '#00000080'}`}}>
+            <Flex order={[2, null, 1]} alignItems="center">
             <ThemeSwitcher isDark={isDark} toggleTheme={toggleTheme} />
             <LangSelector
               currentLang={currentLang}
@@ -80,7 +82,7 @@ const MenuItem: React.FC<FooterProps> = ({
               dropdownPosition="top-right"
             />
           </Flex>
-          <Flex order={[1, null, 2]} mb={["24px", null, "0"]} justifyContent="space-between" alignItems="center">
+          <Flex order={[2, null, 2]} mb={["24px", null, "0"]} justifyContent="space-between" alignItems="center">
             <Box mr="20px">
               <CakePrice cakePriceUsd={cakePriceUsd} color={darkColors.textSubtle as keyof Colors} />
             </Box>
@@ -93,6 +95,11 @@ const MenuItem: React.FC<FooterProps> = ({
             >
               {buyCakeLabel}
             </Button>
+          </Flex>
+          </Flex>
+          <Flex justifyContent="space-between" pt={3} style={{borderTop: `1px solid ${isDark? '#ffffff60': '#00000060'}`}}>
+                <StyledSocialLinks order={[2]} pb={["42px", null, "32px"]} />
+                <Text color={isDark? darkColors.text: lightColors.text}>Copyright © 2021 TradingPlanet | All rights reserved.</Text>
           </Flex>
         </StyledToolsContainer>
       </Flex>

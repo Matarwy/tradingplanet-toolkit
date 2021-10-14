@@ -4,7 +4,7 @@ import SocialLinks from "./Components/SocialLinks";
 import { baseColors, darkColors, lightColors } from "../../theme/colors";
 
 export const StyledFooter: any = styled(Flex)`
-  background-color: ${({ isDark }) => isDark? darkColors.background : lightColors.background};
+  background-color: ${({ isDark }: any) => isDark? darkColors.background : lightColors.background};
 `;
 
 export const StyledList = styled.ul`
@@ -49,5 +49,5 @@ export const StyledToolsContainer = styled(Flex)`
 `;
 
 export const StyledSocialLinks = styled(SocialLinks)`
-  border-bottom: 1px solid ${darkColors.cardBorder};
+  /* border-bottom: 1px solid ${darkColors.cardBorder}; */
 `;

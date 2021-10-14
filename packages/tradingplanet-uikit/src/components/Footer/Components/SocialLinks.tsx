@@ -19,7 +19,11 @@ const SocialLinks: React.FC<FlexProps> = ({ ...props }) => (
       const mr = index < socials.length - 1 ? "24px" : 0;
       if (social.items) {
         return (
-          <Dropdown key={social.label} position="top" target={<IconComponent {...iconProps} mr={mr} />}>
+          <Dropdown key={social.label} position="top" target={
+            <Flex alignItems="center">
+              <IconComponent {...iconProps} mr={mr} />
+            </Flex>
+          }>
             {social.items.map((item) => (
               <Link external key={item.label} href={item.href} aria-label={item.label} color="textSubtle">
                 {item.label}
