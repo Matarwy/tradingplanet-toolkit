@@ -28,7 +28,7 @@ const lists = {
     name: "tradingplanet Default",
     keywords: ["tradingplanet", "default"],
     logoURI:
-      "https://tokens.tradingplanet.finance/images/0x83477a06f73fff92e8cf2c6b2da8efc03294e40c.png",
+      "https://tokens.tradingplanet.finance/images/0x363387914c38de4e01acb79221635fe87288ddb9.png",
     sort: false,
     currentVersion: tradingplanetDefaultVersion,
   },
@@ -37,7 +37,7 @@ const lists = {
     name: "tradingplanet Extended",
     keywords: ["tradingplanet", "extended"],
     logoURI:
-      "https://tokens.tradingplanet.finance/images/0x83477a06f73fff92e8cf2c6b2da8efc03294e40c.png",
+      "https://tokens.tradingplanet.finance/images/0x363387914c38de4e01acb79221635fe87288ddb9.png",
     sort: true,
     currentVersion: tradingplanetExtendedVersion,
   },
@@ -46,7 +46,7 @@ const lists = {
     name: "tradingplanet Top 100",
     keywords: ["tradingplanet", "top 100"],
     logoURI:
-      "https://tokens.tradingplanet.finance/images/0x83477a06f73fff92e8cf2c6b2da8efc03294e40c.png",
+      "https://tokens.tradingplanet.finance/images/0x363387914c38de4e01acb79221635fe87288ddb9.png",
     sort: true,
     currentVersion: tradingplanetTop100Version,
   },
@@ -55,7 +55,7 @@ const lists = {
     name: "tradingplanet Top 15",
     keywords: ["tradingplanet", "top 15"],
     logoURI:
-      "https://tokens.tradingplanet.finance/images/0x83477a06f73fff92e8cf2c6b2da8efc03294e40c.png",
+      "https://tokens.tradingplanet.finance/images/0x363387914c38de4e01acb79221635fe87288ddb9.png",
     sort: true,
     currentVersion: tradingplanetTop15Version,
   },
