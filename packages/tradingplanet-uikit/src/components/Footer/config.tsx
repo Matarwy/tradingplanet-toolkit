@@ -64,10 +64,10 @@ export const footerLinks: FooterLinkType[] = [
         label: "Audits",
         href: "https://docs.pancakeswap.finance/help/faq#is-pancakeswap-safe-has-pancakeswap-been-audited",
       },
-      {
-        label: "Careers",
-        href: "https://docs.pancakeswap.finance/hiring/become-a-chef",
-      },
+      // {
+      //   label: "Careers",
+      //   href: "https://docs.pancakeswap.finance/hiring/become-a-chef",
+      // },
     ],
   },
 ];
@@ -92,11 +92,11 @@ export const socials = [
       },
     ],
   },
-  {
-    label: "Reddit",
-    icon: "Reddit",
-    href: "https://www.reddit.com/user/TradingPlanet",
-  },
+  // {
+  //   label: "Reddit",
+  //   icon: "Reddit",
+  //   href: "https://www.reddit.com/user/TradingPlanet",
+  // },
 ];
 
 export const langs: Language[] = [...Array(20)].map((_, i) => ({
