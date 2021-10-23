@@ -23,7 +23,7 @@
   },
   "jest": {
     "setupFilesAfterEnv": [
-      "<rootDir>/src/setupTests.js"
+      "<rootDir>/src/setupTests.tsx"
     ]
   },
   "devDependencies": {
