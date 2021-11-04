@@ -84,11 +84,11 @@ export const socials = [
     items: [
       {
         label: "English",
-        href: "https://t.me/TradingPlanetExchange",
+        href: "https://t.me/Tradingplanet_Group",
       },
       {
         label: "Announcements",
-        href: "https://t.me/TradingPlanetEX",
+        href: "https://t.me/Tradingplanet_Channel",
       },
     ],
   },

@@ -1,6 +1,6 @@
 {
   "name": "@trading-planet/uikit",
-  "version": "0.55.16",
+  "version": "0.55.17",
   "description": "Set of UI components for tradingplanet projects",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
@@ -8,7 +8,7 @@
   "files": [
     "dist"
   ],
-  "repository": "https://github.com/TradingPlanet/tradingplanet-toolkit/tree/main/packages/planet-uikit",
+  "repository": "https://github.com/Matarwy/tradingplanet-toolkit/tree/main/packages/tradingplanet-uikit",
   "license": "MIT",
   "scripts": {
     "start": "yarn storybook",
