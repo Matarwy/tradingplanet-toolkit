@@ -147,6 +147,9 @@ export { default as AuctionIcon } from "./Icons/Auction";
 export { default as AwardIcon } from "./Icons/Award";
 export { default as MoneyIcon } from "./Icons/Money";
 export { default as ExchangeIcon } from "./Icons/Exchange";
+export { default as YoutubeIcon } from './Icons/Youtube';
+export { default as DiscordIcon } from './Icons/Discord';
+export {default as CoinsniperIcon} from './Icons/Coinsniper';
 
 export { default as Svg } from "./Svg";
 export type { SvgProps } from "./types";

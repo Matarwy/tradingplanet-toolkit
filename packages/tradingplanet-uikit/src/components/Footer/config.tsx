@@ -92,6 +92,21 @@ export const socials = [
       },
     ],
   },
+  {
+    label: "Discord",
+    icon: "Discord",
+    href: "https://discord.com/invite/PSBZTJTN",
+  },
+  {
+    label: "Youtube",
+    icon: "Youtube",
+    href: "https://www.youtube.com/channel/UC1BHrF_BA8fhN95IWaBI2HQ/featured",
+  },
+  {
+    label: "Coinsniper",
+    icon: "Coinsniper",
+    href: "https://coinsniper.net/coin/18217",
+  }
   // {
   //   label: "Reddit",
   //   icon: "Reddit",

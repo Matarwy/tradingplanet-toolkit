@@ -7,9 +7,11 @@ import Link from "../../Link/Link";
 import IconComponent from "../../Svg/IconComponent";
 import { socials } from "../config";
 
-const SocialLinks: React.FC<FlexProps> = ({ ...props }) => (
+const SocialLinks: React.FC<FlexProps> = ({ ...props }) => {
+  
+  return (
   <Flex {...props}>
-    {socials.map((social, index) => {
+    {socials.map((social: any, index) => {
       const iconProps = {
         iconName: social.icon,
         width: "20px",
@@ -24,7 +26,7 @@ const SocialLinks: React.FC<FlexProps> = ({ ...props }) => (
               <IconComponent {...iconProps} mr={mr} />
             </Flex>
           }>
-            {social.items.map((item) => (
+            {social.items.map((item: any) => (
               <Link external key={item.label} href={item.href} aria-label={item.label} color="textSubtle">
                 {item.label}
               </Link>
@@ -39,6 +41,6 @@ const SocialLinks: React.FC<FlexProps> = ({ ...props }) => (
       );
     })}
   </Flex>
-);
+)};
 
 export default React.memo(SocialLinks, () => true);
