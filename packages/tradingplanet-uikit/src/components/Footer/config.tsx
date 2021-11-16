@@ -95,7 +95,7 @@ export const socials = [
   {
     label: "Discord",
     icon: "Discord",
-    href: "https://discord.com/invite/PSBZTJTN",
+    href: "https://discord.gg/N64jBq6AB3",
   },
   {
     label: "Youtube",
