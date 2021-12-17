@@ -86,14 +86,15 @@ const MenuItem: React.FC<FooterProps> = ({
             <Box mr="20px">
               <CakePrice cakePriceUsd={cakePriceUsd} color={darkColors.textSubtle as keyof Colors} />
             </Box>
-            <Button
-              as="a"
-              href="/swap?outputCurrency=0x363387914c38de4e01acb79221635fe87288ddb9"
-              scale="sm"
-              endIcon={<ArrowForwardIcon color={lightColors.backgroundAlt} />}
-            >
-              {buyCakeLabel}
-            </Button>
+            <Link external  href="https://www.pinksale.finance/#/launchpad/0x9afC5787e371d56d8502F962f68c4a272a214e9D?chain=BSC">
+              <Button
+                as="a"
+                scale="sm"
+                endIcon={<ArrowForwardIcon color={lightColors.backgroundAlt} />}
+              >
+                {buyCakeLabel}
+              </Button>
+            </Link>
           </Flex>
           </Flex>
           <Flex justifyContent="space-between" pt={3} style={{borderTop: `1px solid ${isDark? '#ffffff60': '#00000060'}`}} flexDirection={["column", null, "row"]}>
