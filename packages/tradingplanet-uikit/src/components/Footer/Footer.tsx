@@ -86,7 +86,7 @@ const MenuItem: React.FC<FooterProps> = ({
             <Box mr="20px">
               <CakePrice cakePriceUsd={cakePriceUsd} color={darkColors.textSubtle as keyof Colors} />
             </Box>
-            <Link external  href="https://www.pinksale.finance/#/launchpad/0x9afC5787e371d56d8502F962f68c4a272a214e9D?chain=BSC">
+            <Link external  href="https://exchange.pinkswap.finance/#/swap?outputCurrency=0x363387914c38de4E01aCb79221635Fe87288DDb9">
               <Button
                 as="a"
                 scale="sm"
